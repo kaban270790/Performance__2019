@@ -24455,13 +24455,14 @@ let currentPageDevs = 1;
 
 // pagiantorDevs.classList.toggle('paginator_hide', panelCountDevs < 7);
 
-document.querySelectorAll('.card').forEach(function (item) {
-    if (item.classList.contains('card_size_s')) {
-        item.style.borderRadius = '22px';
+$('.card').each(function (e) {
+    if ($(this).hasClass('card_size_s')) {
+        $(this).css({'border-radius': '22px'})
     } else {
-        item.style.borderRadius = '54px';
+        $(this).css({'border-radius': '54px'})
     }
 });
+
 
 let curValue;
 let curRotate;
@@ -24613,11 +24614,11 @@ document.querySelectorAll('.panel_floor').forEach(p => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll('.card').forEach(function (item) {
-        if (item.classList.contains('card_size_s')) {
-            item.style.borderRadius = '22px';
+    $('.card').each(function (e) {
+        if ($(this).hasClass('card_size_s')) {
+            $(this).css({'border-radius': '22px'})
         } else {
-            item.style.borderRadius = '23px';
+            $(this).css({'border-radius': '23px'})
         }
     });
     var waterContainer = document.querySelector('.card.card_size_s:last-child');
@@ -24703,6 +24704,13 @@ var storage, initCriticalCam = function () {
         y.push(e), m = e.clientX, u = e.clientY, p = parseInt(g.style.backgroundPositionX, 10), v = parseInt(g.style.backgroundPositionY, 10), 2 == y.length && (h = Math.atan2(y[1].clientY - y[0].clientY, y[1].clientX - y[0].clientX) * (180 / Math.PI)), g.addEventListener("pointermove", t)
     }), document.addEventListener("pointerup", e), g.addEventListener("onpointerup", e)
 };
+
+$(document).ready(function () {
+
+    var carousel = $("#carousel");
+
+    carousel.owlCarousel();
+});
 
 function status(e) {
     return 200 <= e.status && e.status < 300 ? Promise.resolve(e) : Promise.reject(new Error(e.statusText))
