@@ -328,10 +328,14 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
  ###################################################################### -->
 <script>
     (function () {
+        const multimediaScript = document.createElement('script');
+        multimediaScript.setAttribute('src', './js/multimedia.js');
         const buttonsContainer = document.querySelector('.buttons-wrap');
 
         buttonsContainer.innerHTML = '<button class="button button_yellow" type="button">Да</button>' +
             '<button class="button">Нет</button>';
+
+        document.querySelector('.multimedia').appendChild(multimediaScript);
     })();
 </script>
 <script src="https://yastatic.net/jquery/3.3.1/jquery.js"></script>
