@@ -5,19 +5,8 @@
     <meta name="robots" content="noindex">
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="shortcut icon" href="favicon.png">
-    <!-- ######################################################################
-        .oooooo..o                     o8o                 .
-       d8P'    `Y8                     `"'               .o8
-       Y88bo.       .ooooo.  oooo d8b oooo  oo.ooooo.  .o888oo  .oooo.o
-        `"Y8888o.  d88' `"Y8 `888""8P `888   888' `88b   888   d88(  "8
-            `"Y88b 888        888      888   888   888   888   `"Y88b.
-       oo     .d8P 888   .o8  888      888   888   888   888 . o.  )88b
-       8""88888P'  `Y8bod8P' d888b    o888o  888bod8P'   "888" 8""888P'
-                                             888
-                                            o888o
-     ###################################################################### -->
-    <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css"/>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet"/>
     <style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }
 body /shadow-deep/ [touch-action="none"]{ -ms-touch-action: none; touch-action: none; }
 [touch-action="auto"]{ -ms-touch-action: auto; touch-action: auto; }
@@ -29,74 +18,8 @@ body /shadow-deep/ [touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action
 [touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
 body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
 </style>
-    <template class="template">
-        <div class="card">
-            <div class="card-heading">
-                <div class="card-icon-wrap">
-                    <img class="card-icon">
-                </div>
-                <h3 class="card-title"></h3>
-            </div>
-            <div class="card-specs">
-                <p class="card-source"></p>
-                <p class="card-time"></p>
-            </div>
-        </div>
-    </template>
-    <template class="template-description">
-        <p class="card-description card-description_big description_critical">Робопылесос не смог сменить свое
-            местоположение в течение последних 3 минут. Похоже, ему нужна помощь.
-        <div class="critical-cam" onload="initCriticalCam()" touch-action="none">
-        </div>
-        </p>
-    </template>
-    <template class="template-cam"></template>
-    <template class="template-graph">
-        <div class="card-data card-data_graph">
-            <img class="card-data_graph-img" src="img/Richdata@3x.png">
-        </div>
-    </template>
-    <template class="template-climat">
-        <div class="card-data card-data_climat">
-            <div class="climat-block">
-                Температура: <em class="climat-block_data climat-block_data__temp">24 C</em>
-            </div>
-            <div class="climat-block hum-block">
-                Влажность: <em class="climat-block_data climat-block_data__hum">80%</em>
-            </div>
-        </div>
-    </template>
-    <template class="template-music">
-        <div class="card-data card-data_music">
-            <div class="song-area">
-                <div class="cover-wrap">
-                    <img class="cover"
-                         src="https://avatars.yandex.net/get-music-content/193823/1820a43e.a.5517056-1/m1000x1000">
-                </div>
-                <div class="song-data">
-                    <h4 class="song-title">Florence &amp; The Machine - Big God</h4>
-                    <div class="song-timeline-wrap">
-                        <input class="song-range" max="100" min="0" name="song-range" step="1" type="range" value="">
-                        <div class="song-length">4:31</div>
-                    </div>
-                </div>
-            </div>
-            <div class="player-controls">
-                <button class="player-control player-control_prev">
-                    <img src="img/Prev.svg">
-                </button>
-                <button class="player-control player-control_next">
-                    <img src="img/Prev.svg">
-                </button>
-                <input class="volume-range" max="100" min="0" name="volume-range" step="1" type="range" value="50">
-                <div class="song-volume">80%</div>
-            </div>
-        </div>
-    </template>
-    <template class="template-buttons">
-        <div class="buttons-wrap"></div>
-    </template>
 </head>
+
 <!-- ######################################################################
             oooooooooo.                  .o8
             `888'   `Y8b                "888
@@ -283,7 +206,7 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
                     <div class="song-area">
                         <div class="cover-wrap">
                             <img class="cover"
-                                 src="https://avatars.yandex.net/get-music-content/193823/1820a43e.a.5517056-1/m1000x1000">
+                                 src="//avatars.yandex.net/get-music-content/193823/1820a43e.a.5517056-1/m50x50">
                         </div>
                         <div class="song-data">
                             <h4 class="song-title">Florence &amp; The Machine - Big God</h4>
@@ -380,7 +303,6 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
             </div>
         </div>
     </div>
-    <div class="content-block multimedia"></div>
 </div>
 <footer>
     <menu class="footer-menu">
@@ -391,41 +313,28 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
         <a class="footer-menu__link" href="./assets/license.pdf" target="blank">Лицензия</a>
     </menu>
 </footer>
-<script src="https://unpkg.com/react@0.0.0-375616788/umd/react.production.min.js"></script>
-<script src="https://unpkg.com/react-dom@0.0.0-375616788/umd/react-dom.production.min.js"></script>
+<!-- ######################################################################
+    .oooooo..o                     o8o                 .
+   d8P'    `Y8                     `"'               .o8
+   Y88bo.       .ooooo.  oooo d8b oooo  oo.ooooo.  .o888oo  .oooo.o
+    `"Y8888o.  d88' `"Y8 `888""8P `888   888' `88b   888   d88(  "8
+        `"Y88b 888        888      888   888   888   888   `"Y88b.
+   oo     .d8P 888   .o8  888      888   888   888   888 . o.  )88b
+   8""88888P'  `Y8bod8P' d888b    o888o  888bod8P'   "888" 8""888P'
+                                         888
+                                        o888o
+ ###################################################################### -->
 <script>
-    (function (w, d, n) {
-        var s = d.createElement('script');
-        s.src = '//zen.yandex.ru/widget-loader';
-        d.head.appendChild(s);
-        var c = d.createElement('div');
-        c.style.display = 'none';
-        d.body.appendChild(c);
-        w[n] = w[n] || [];
-        w[n].push(function () {
-            w.YandexZen.renderWidget({
-                container: c,
-                clid: [123, 123],
-            });
-        })
-    })(window, document, 'yandexZenAsyncCallbacks');
     (function () {
-        const multimediaScript = document.createElement('script');
-        multimediaScript.setAttribute('src', './js/multimedia.js');
         const buttonsContainer = document.querySelector('.buttons-wrap');
 
         buttonsContainer.innerHTML = '<button class="button button_yellow" type="button">Да</button>' +
             '<button class="button">Нет</button>';
-
-        document.querySelector('.multimedia').appendChild(multimediaScript);
-    })()
+    })();
 </script>
+<script src="//yastatic.net/jquery/3.3.1/jquery.js"></script>
 <script src="js/owl-carousel/owl.carousel.min.js"></script>
-<script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
-<script src="https://unpkg.com/styled-components/dist/styled-components.min.js"></script>
-<script src="https://yastatic.net/jquery/3.3.1/jquery.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-<script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+<script src="//code.jquery.com/pep/0.4.3/pep.js"></script>
 <script src="./js/main.js"></script>
 </body>
 </html>

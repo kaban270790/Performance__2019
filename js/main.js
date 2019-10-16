@@ -24455,7 +24455,7 @@ let currentPageDevs = 1;
 
 // pagiantorDevs.classList.toggle('paginator_hide', panelCountDevs < 7);
 
-$('.card').each(function(e) {
+$('.card').each(function (e) {
     if ($(this).hasClass('card_size_s')) {
         $(this).css({'border-radius': '22px'})
     } else {
@@ -24614,7 +24614,7 @@ document.querySelectorAll('.panel_floor').forEach(p => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    $('.card').each(function(e) {
+    $('.card').each(function (e) {
         if ($(this).hasClass('card_size_s')) {
             $(this).css({'border-radius': '22px'})
         } else {
@@ -24705,7 +24705,7 @@ var storage, initCriticalCam = function () {
     }), document.addEventListener("pointerup", e), g.addEventListener("onpointerup", e)
 };
 
-$(document).ready(function(){
+$(document).ready(function () {
 
     var carousel = $("#carousel");
 
