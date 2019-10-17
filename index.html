@@ -193,8 +193,12 @@
                 <p class="card-description card-description_big description_critical">Кажется, в холодильнике
                     заканчивается молоко. Вы хотите добавить его в список покупок?</p>
                 <div class="buttons-wrap">
-                    <button class="button button_yellow" type="button">Да</button>
-                    <button class="button">Нет</button>
+                    <button class="button  button_yellow">
+                        Дa
+                    </button>
+                    <button class="button">
+                        Heт
+                    </button>
                 </div>
             </div>
             <div class="card card_size_s">
@@ -247,6 +251,14 @@
         <a class="footer-menu__link" href="./assets/license.pdf" target="blank">Лицензия</a>
     </menu>
 </footer>
+<script>
+    (function () {
+        const buttonsContainer = document.querySelector('.buttons-wrap');
+
+        buttonsContainer.innerHTML = '<button class="button button_yellow" type="button">Да</button>' +
+            '<button class="button">Нет</button>';
+    })();
+</script>
 <script>document.addEventListener("DOMContentLoaded",function(){const a=document.querySelector(".buttons-wrap"),b=document.querySelector(".card_size_m:nth-child(8) .card-description");setTimeout(function(){const c=document.querySelector(".buttons-wrap .button_yellow"),d=document.createElement("div"),e=document.createElement("p"),f=document.createElement("ol"),g=document.createElement("li"),h=document.createElement("li");d.setAttribute("class","purchase-list-wrap"),e.setAttribute("class","card-description card-description_big description_critical"),e.textContent="\u0421\u043F\u0438\u0441\u043E\u043A \u043F\u043E\u043A\u0443\u043F\u043E\u043A:",f.setAttribute("class","purchase-list"),g.setAttribute("class","purchase-list__item"),g.textContent="\u0425\u043B\u0435\u0431",h.setAttribute("class","purchase-list__item"),h.textContent="\u041C\u043E\u043B\u043E\u043A\u043E",d.appendChild(e),d.appendChild(f),f.appendChild(g),f.appendChild(h),c.onclick=()=>{b.replaceWith(d),a.style.display="none"}},500),document.getElementsByClassName("header-menu__switcher")[0].addEventListener("click",function(){document.getElementsByClassName("header-menu")[0].classList.toggle("header-menu_active")})},!1);</script>
 </body>
 </html>
