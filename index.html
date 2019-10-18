@@ -6,31 +6,7 @@
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="shortcut icon" href="favicon.ico">
-    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet"/>
-    <style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }
-body /shadow-deep/ [touch-action="none"]{ -ms-touch-action: none; touch-action: none; }
-[touch-action="auto"]{ -ms-touch-action: auto; touch-action: auto; }
-body /shadow-deep/ [touch-action="auto"]{ -ms-touch-action: auto; touch-action: auto; }
-[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }
-body /shadow-deep/ [touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }
-[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }
-body /shadow-deep/ [touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }
-[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
-body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
-</style>
 </head>
-
-<!-- ######################################################################
-            oooooooooo.                  .o8
-            `888'   `Y8b                "888
-             888     888  .ooooo.   .oooo888  oooo    ooo
-             888oooo888' d88' `88b d88' `888   `88.  .8'
-             888    `88b 888   888 888   888    `88..8'
-             888    .88P 888   888 888   888     `888'
-            o888bood8P'  `Y8bod8P' `Y8bod88P"     .8'
-                                              .o..P'
-                                              `Y8P'
-     ###################################################################### -->
 <body>
 <div class="video-controls">
     <div class="video-controls-wrap">
@@ -42,15 +18,6 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
                name="video-contrast-range" step="1" type="range" value="100">
     </div>
 </div>
-<!-- ######################################################################
-     ooo        ooooo
-     `88.       .888'
-      888b     d'888   .ooooo.  ooo. .oo.   oooo  oooo
-      8 Y88. .P  888  d88' `88b `888P"Y88b  `888  `888
-      8  `888'   888  888ooo888  888   888   888   888
-      8    Y     888  888    .o  888   888   888   888
-     o8o        o888o `Y8bod8P' o888o o888o  `V88V"V8P'
-  ###################################################################### -->
 <header>
     <img class="header-logo" src="img/yd2.png">
     <menu class="header-menu">
@@ -62,7 +29,6 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
     </menu>
     <svg class="header-menu__switcher" height="14px" version="1.1" viewBox="0 0 16 14" width="16px"
          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
         <title>icon_list_m</title>
         <desc>Created with Sketch.</desc>
         <defs>
@@ -81,15 +47,6 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
         </g>
     </svg>
 </header>
-<!-- ######################################################################
-  .oooooo.                             .                             .
- d8P'  `Y8b                          .o8                           .o8
-888           .ooooo.  ooo. .oo.   .o888oo  .ooooo.  ooo. .oo.   .o888oo
-888          d88' `88b `888P"Y88b    888   d88' `88b `888P"Y88b    888
-888          888   888  888   888    888   888ooo888  888   888    888
-`88b    ooo  888   888  888   888    888 . 888    .o  888   888    888 .
- `Y8bood8P'  `Y8bod8P' o888o o888o   "888" `Y8bod8P' o888o o888o   "888"
- ###################################################################### -->
 <div class="wrap">
     <div class="switch-block switch-block_active" data="feed">
         <h2 class="content-heading">Лента событий</h2>
@@ -258,12 +215,8 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
                     снова в строю!</p></div>
             <div class="card card_size_l critical">
                 <div class="card-heading heading-critical">
-                    <div class="card-icon-wrap">
-                        <div id="carousel">
-                            <div class="carousel-element">
-                                <img class="card-icon" src="img/cam.svg">
-                            </div>
-                        </div>
+                    <div class="card-icon-wrap" style="overflow: hidden">
+                        <img class="card-icon" src="img/cam.svg">
                     </div>
                     <h3 class="card-title">Пылесос застрял</h3>
                 </div>
@@ -273,24 +226,17 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
                 </div>
                 <p class="card-description card-description_big description_critical">Робопылесос не смог сменить свое
                     местоположение в течение последних 3 минут. Похоже, ему нужна помощь.
-                <div class="critical-cam" onload="initCriticalCam()"
+                <div class="critical-cam"
                      style="background-position: 0px 0px; background-size: 100%; filter: brightness(100%);"
                      touch-action="none">
                 </div>
                 </p></div>
             <div class="card card_size_s" style="border-radius: 22px;">
                 <div class="card-heading">
-                    <div class="card-icon-wrap">
-                        <img class="card-icon" src="img/battery.svg">
-                    </div>
-                    <h3 class="card-title">Зарядка завершена</h3>
-                </div>
-                <div class="card-specs">
-                    <p class="card-source">Оконный сенсор</p>
-                    <p class="card-time card-time_block">16:22, Сегодня</p>
-                </div>
-                <p class="card-description card-description_big description_critical">Ура! Устройство «Оконный сенсор»
-                    снова в строю!</p>
+                    <div class="card-icon-wrap"><img class="card-icon" src="img/kettle.svg"></div>
+                    <h3 class="card-title">Вода вскипела</h3></div>
+                <div class="card-specs"><p class="card-source">Чайник</p>
+                    <p class="card-time card-time_block">16:20, Сегодня</p></div>
             </div>
         </div>
     </div>
@@ -304,17 +250,6 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
         <a class="footer-menu__link" href="./assets/license.pdf" target="blank">Лицензия</a>
     </menu>
 </footer>
-<!-- ######################################################################
-    .oooooo..o                     o8o                 .
-   d8P'    `Y8                     `"'               .o8
-   Y88bo.       .ooooo.  oooo d8b oooo  oo.ooooo.  .o888oo  .oooo.o
-    `"Y8888o.  d88' `"Y8 `888""8P `888   888' `88b   888   d88(  "8
-        `"Y88b 888        888      888   888   888   888   `"Y88b.
-   oo     .d8P 888   .o8  888      888   888   888   888 . o.  )88b
-   8""88888P'  `Y8bod8P' d888b    o888o  888bod8P'   "888" 8""888P'
-                                         888
-                                        o888o
- ###################################################################### -->
 <script>
     (function () {
         const buttonsContainer = document.querySelector('.buttons-wrap');
@@ -323,8 +258,6 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
             '<button class="button">Нет</button>';
     })();
 </script>
-<script src="//yastatic.net/jquery/3.3.1/jquery.js"></script>
-<script src="js/owl-carousel/owl.carousel.min.js"></script>
-<script src="./js/main.js"></script>
+<script>document.addEventListener("DOMContentLoaded",function(){const a=document.querySelector(".buttons-wrap"),b=document.querySelector(".card_size_m:nth-child(8) .card-description");setTimeout(function(){const c=document.querySelector(".buttons-wrap .button_yellow"),d=document.createElement("div"),e=document.createElement("p"),f=document.createElement("ol"),g=document.createElement("li"),h=document.createElement("li");d.setAttribute("class","purchase-list-wrap"),e.setAttribute("class","card-description card-description_big description_critical"),e.textContent="\u0421\u043F\u0438\u0441\u043E\u043A \u043F\u043E\u043A\u0443\u043F\u043E\u043A:",f.setAttribute("class","purchase-list"),g.setAttribute("class","purchase-list__item"),g.textContent="\u0425\u043B\u0435\u0431",h.setAttribute("class","purchase-list__item"),h.textContent="\u041C\u043E\u043B\u043E\u043A\u043E",d.appendChild(e),d.appendChild(f),f.appendChild(g),f.appendChild(h),c.onclick=()=>{b.replaceWith(d),a.style.display="none"}},500),document.getElementsByClassName("header-menu__switcher")[0].addEventListener("click",function(){document.getElementsByClassName("header-menu")[0].classList.toggle("header-menu_active")})},!1);</script>
 </body>
 </html>
